@@ -5,11 +5,34 @@ class App extends Component {
     list:[],
     newQuote: '',
   }
+  addQuote(){
+    const newQuote={
+      id: 1 + Math.random(),
+      value: this.state.newQuote.slice(),
+    }
+
+    const list=[...this.state.list];
+
+    list.push(newQuote);
+
+    this.setState({
+      list,
+      newQuote:'',
+    });
+  }
   render() { 
     return (
       <div className="App">
       <div className="quote-container">
-        <p>{this.state.newQuote}</p>
+        {
+          this.state.list.map(quote =>{
+            return(
+              <p key={quote.id}>
+                {quote.value}
+              </p>
+            )
+          })
+        }
         <button onClick={() =>this.addQuote()}>New Quote</button>
       </div>
     </div>
