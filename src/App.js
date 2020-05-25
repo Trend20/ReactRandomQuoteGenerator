@@ -3,7 +3,24 @@ import React, { Component } from 'react';
 class App extends Component {
   state={
     list:[],
-    newQuote: '',
+    newQuote:[
+      {
+        "quote":'hey love',
+        "author": 'dimore'
+      },
+      {
+        "quote":'hey mum',
+        "author": 'stevo'
+      },
+      {
+        "quote":'hey dad',
+        "author": 'eriko'
+      },
+      {
+        "quote":'hey siz',
+        "author": 'wifi'
+      }
+    ],
   }
   addQuote(){
     const newQuote={
