@@ -25,12 +25,12 @@ class App extends Component {
   addQuote(){
     const newQuote={
       id: 1 + Math.random(),
-      value: this.state.newQuote.slice(),
+      value: this.state.newQuote.quote,
     }
 
     const list=[...this.state.list];
 
-    list.push(newQuote);
+    list.push(JSON.parse(newQuote));
 
     this.setState({
       list,
