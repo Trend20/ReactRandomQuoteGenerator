@@ -39,7 +39,10 @@ class App extends Component {
   render() { 
     return (
       <div>
-        <QuoteAuthor />
+        <QuoteAuthor 
+        displayColor={this.randomColor}
+          handleClick={this.handleClick}
+        />
         <Quotes />
       </div>
     );
