@@ -1,9 +1,13 @@
 import React from 'react';
+import Button from './components/Button';
 
 function App() {
   return (
     <div className="App">
-      Hello world
+      <div className="quote-container">
+        <p>Hey woman</p>
+        <Button />
+      </div>
     </div>
   );
 }
