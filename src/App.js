@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
  
 class App extends Component {
+  state={
+    list:[],
+    newQuote: '',
+  }
   render() { 
     return (
       <div className="App">
       <div className="quote-container">
-        <p>Hey woman</p>
-        <button>New Quote</button>
+        <p>{this.state.newQuote}</p>
+        <button onClick={() =>this.addQuote()}>New Quote</button>
       </div>
     </div>
     );
