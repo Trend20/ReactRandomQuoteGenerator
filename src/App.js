@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Quotes from './components/QuotesDatabase';
+import quotes from './components/QuotesDatabase';
 import QuoteAuthor from './components/QuoteAuthor';
 import './App.css'
  
@@ -42,8 +42,8 @@ class App extends Component {
         <QuoteAuthor 
         displayColor={this.randomColor}
           handleClick={this.handleClick}
+          {...this.state}
         />
-        <Quotes />
       </div>
     );
   }
