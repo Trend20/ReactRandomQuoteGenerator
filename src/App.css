@@ -1,53 +1,56 @@
 body {
     margin: 0;
-  }
-  
-  html {
+    font-family: 'Potta One', cursive;
+}
+
+html {
     transition: background-color 1s;
-  }
-  #root{
-    width:80%;
+}
+
+#root {
+    width: 80%;
     margin: 0 10%;
-  }
-  
-  .quotebox {
+}
+
+.quotebox {
     height: auto;
     width: 100%;
     border: 1px rgb(145, 126, 126) solid;
     border-radius: 10px;
     text-align: right;
-    max-width: 35rem
-    
-  }
-  
-  #quote {
+    max-width: 35rem;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#quote {
     margin: 20px;
     text-align: left;
-  }
-  
-  .fadeIn {
+}
+
+.fadeIn {
     opacity: 0;
     display: block;
     animation: slidein 1s ease-out forwards;
-  }
-  
-  @keyframes slidein {
+}
+
+@keyframes slidein {
     0% {
-      opacity: 0;
-      transform: translateY(-25px);
+        opacity: 0;
+        transform: translateY(-25px);
     }
     100% {
-      opacity: 1;
-      transform: translateY(0px);
+        opacity: 1;
+        transform: translateY(0px);
     }
-  }
-  
-  #author {
+}
+
+#author {
     margin: 20px;
     font-style: italic;
-  }
-  
-  #newquote {
+}
+
+#newquote {
     margin: 20px;
     position: relative;
     border-radius: 5px;
@@ -56,4 +59,4 @@ body {
     font-weight: 700;
     font-family: "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
     color: white;
-  }
+}
